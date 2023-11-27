@@ -1,13 +1,11 @@
 #include <pybind11/pybind11.h>
+#include <python3.11/Python.h>
 #include "main.h"
 
 #define STRINGIFY(x) #x
 #define MACRO_STRINGIFY(x) STRINGIFY(x)
 
 
-int subtract(int i, int j){
-    return i - j;
-}
 
 namespace py = pybind11;
 
@@ -35,6 +33,12 @@ PYBIND11_MODULE(python_example, m) {
         Subtract two numbers
 
         Some other explanation about the subtract function.
+    )pbdoc");
+
+    m.def("mul", &mul, R"pbdoc(
+          Multiply two numbers
+
+          Some explanation
     )pbdoc");
 
     
