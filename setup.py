@@ -25,8 +25,8 @@ ext_modules = [
 setup(
     name="python_example",
     version=__version__,
-    author="Sylvain Corlay",
-    author_email="sylvain.corlay@gmail.com",
+    author="Tomàs Ockier",
+    author_email="ockier1@gmail.com",
     url="https://github.com/pybind/python_example",
     description="A test project using pybind11",
     long_description="",
